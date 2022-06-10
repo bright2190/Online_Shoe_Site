@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase</title>
+
+    <link rel="stylesheet" href="./css/buy.css">
+</head>
+<body>
+
+
+    <!-- wrapping -->
+
+    <div class="container">
+
+        <div class="img">
+            <div class="triangle-up">
+                <div class="text">
+                    <h1></h1>
+                    <h2></h2>
+                    <h3>Purchase Now</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- end of wrapping -->
+
+
+
+
+
+   
+    
+    <script>
+
+        window.addEventListener("load", function() {
+
+            let getItem = localStorage.getItem("store");
+
+            if(getItem == null) {
+
+                window.location.href = "index.html";
+
+            } else {
+
+                getItem = JSON.parse(getItem);
+
+                let image_item = getItem.imageItem;
+
+                let name_item = getItem.nameItem;
+
+                let price_item = getItem.priceItem;
+
+                let check1 = name_item.substring(name_item.indexOf(": ") + 1);
+
+                let check2 = price_item.substring(price_item.indexOf(": ") + 1);
+
+                let check3 = image_item.substring(image_item.indexOf("/image") + 1);
+
+                // console.log(price_item);
+
+                document.getElementsByTagName("h1")[0].innerText = check1;
+
+                document.getElementsByTagName("h2")[0].innerText = check2;
+
+                console.log(document.getElementsByTagName("div")[1])
+
+                document.getElementsByTagName("div")[1].style.backgroundImage = `url("${check3}")`;
+            }
+        })
+
+    </script>
+</body>
+</html>

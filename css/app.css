@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    width: 100%;
+    font-family: monospace;
+}
+
+.container {
+    margin: 0px auto;
+    height: 100vh;
+    display: flex;
+}
+
+/* styling the list  */
+
+ul {
+    flex-basis: 25%;
+    padding-top: 20px;
+    list-style-type: none;
+    background-color: lightblue;
+    text-align: center;
+    color: hotpink;
+    font-family: cursive;
+}
+
+#remove {
+    font-size: 30px;
+    margin-left: 300px;
+    cursor: pointer;
+}
+
+
+li {
+    margin-top: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+
+li:hover {
+    cursor: pointer;
+    background-color: teal;
+    border-radius: 10px;
+    color: white;
+}
+
+
+/* styling the image */
+
+.img_only {
+    flex-basis: 75%;
+    background-image: url("../assets/image/img2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+
+/* styling small image */
+
+#small_img1, #small_img2, #small_img3, #small_img4 {
+    text-align: center;
+    border: 5px solid hotpink;
+    background-color: white;
+}
+
+#small_img1 {
+    display: none;
+    position: absolute;
+    top: 150px;
+    left: 350px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#small_img2 {
+    display: none;
+    position: absolute;
+    top: 290px;
+    left: 350px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#small_img3 {
+    display: none;
+    position: absolute;
+    top: 400px;
+    left: 350px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#small_img4 {
+    display: none;
+    position: absolute;
+    top: 480px;
+    left: 350px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+    background-color: teal;
+    color: white;
+    border-radius: 3px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-right: 2px;
+    padding-left: 2px;
+}
+
+
+
+
+/* media query */
+@media (max-width: 1224px) {
+
+    ul {
+        flex-basis: 30%;
+    }
+
+    .img_only {
+        flex-basis: 70%;
+    }
+}

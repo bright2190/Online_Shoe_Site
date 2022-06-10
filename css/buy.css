@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,body {
+    width: 100%;
+    font-family: cursive;
+}
+
+
+.container {
+    /* border: 1px solid red; */
+    height: 100vh;
+    margin: 0px auto;
+    display: flex;
+    /* flex-direction: row; */
+}
+
+.img {
+    flex-basis: 100%;
+    display: flex;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.triangle-up {
+	width: 0;
+	height: 0;
+	border-top: 340px solid transparent;
+	border-left: 400px solid lightblue;
+	border-bottom: 350px solid transparent;
+}
+
+.text {
+    position: absolute;
+    left: 50px;
+    right: 5px;
+    top: 250px;
+    color: hotpink;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h3 {
+    margin-top: 20px;
+    border: 5px solid hotpink;
+    display: inline-block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: white;
+    color: hotpink;
+    border-radius: 5px;
+    transition: background-color 0.7s ease-in-out;
+    transition: border 0.7s ease-in-out;
+}
+
+h3:hover {
+    background-color: hotpink;
+    color: white;
+    border: 5px solid white;
+}
+
+
+@media (max-width: 425px) {
+
+    .triangle-up {
+        border-top: 200px solid transparent;
+        border-left: 200px solid lightblue;
+        border-bottom: 200px solid transparent;
+    }
+
+    .text {
+        top: 130px;
+        left: 10px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+    
+    h3 {
+        font-size: 15px;
+        margin-top: 20px;
+        border: 5px solid hotpink;
+        display: inline-block;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 2px;
+        padding-right: 2px;
+        background-color: white;
+        color: hotpink;
+        border-radius: 5px;
+        transition: background-color, color, border 0.5s ease-in;
+    }
+    
+}
