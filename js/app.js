@@ -135,7 +135,7 @@ let link_only = document.getElementsByTagName("li").length;
 for(let i = 0; i < link_only; i++) {
     document.getElementsByTagName("li")[i].addEventListener("click", function() {
 
-        document.getElementsByClassName("img_only")[0].style.backgroundImage = 'url(./assets/image/img'+i+".jpg)";
+        document.getElementsByClassName("img_only")[0].style.backgroundImage = 'url(image/img'+i+".jpg)";
         document.getElementsByClassName("img_only")[0].style.backgroundPosition = "center";
         document.getElementsByClassName("img_only")[0].style.backgroundOrigin = "border-box";
         document.getElementsByClassName("img_only")[0].style.backgroundSize = "cover";
@@ -177,4 +177,3 @@ for(let i = 0; i < link_ancho; i++) {
 
 
 }
-
